@@ -97,7 +97,7 @@ const Sidebar = () => {
                   width="100px"
                   height="100px"
                   src={`../../assets/panda-bear.jpg`}
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
+                  style={{ cursor: "pointer", borderRadius: "30%" }}
                 />
               </Box>
               <Box textAlign="center">
@@ -121,6 +121,14 @@ const Sidebar = () => {
               title="Dashboard"
               to="/"
               icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            <Item
+              title="Profile"
+              to="/profile"
+              icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
